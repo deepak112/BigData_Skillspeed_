@@ -8,7 +8,7 @@ Link: https://www.dropbox.com/s/088v50nvtk39kg2/BX-CSV-Dump.zip?dl=0
 hadoop fs -mkdir /BookData
 hadoop fs -mkdir /BookData/inputs
 
-2. Change Directory to Analyze_Book_Data/Data_set/BX-CSV-Dump
+2. Change Directory to Analyze_Book_Data/Data_set/BX-CSV-Dump(first extract BX-CSV-Dump.zip)
 
 3. Copy data to /BookData/inputs in hdfs
 hadoop fs -put BX-Book-Ratings.csv /BookData/inputs/
@@ -42,5 +42,4 @@ Running -
 hadoop jar BooksDataRank.jar books.data.BooksDataRank /BookData/inputs/BX-Books.csv /BookData/inputs/BX-Book-Ratings.csv /BookData/BooksDataRankTemp /BookData/BooksDataRank
 To see Output(Sample output is given) - 
 hadoop fs -cat /BookData/BooksDataRank/p*
-
 
